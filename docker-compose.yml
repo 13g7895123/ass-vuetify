@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+ ass-vue-vuetify:
+   image: node:alpine
+   container_name: ass-vue-vuetify
+   entrypoint: /bin/sh
+   ports:
+     - 9053:8000
+   working_dir: /srv/app
+   volumes:
+     - type: bind
+       source: ./vue-app
+       target: /srv/app
+   tty: true
