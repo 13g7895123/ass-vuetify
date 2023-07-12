@@ -5,6 +5,6 @@ up:
 stop:
 	docker-compose stop
 run:
-	docker exec -it ass-vue-vuetify sh -c "npm i --legacy-peer-deps && npm run dev"
+	docker exec -it ass-vuetify sh -c "npm i --legacy-peer-deps && npm run dev"
 build:
-	docker exec -it ass-vue-vuetify sh -c "npm run build"
+	docker exec -it ass-vuetify sh -c "npm run build"

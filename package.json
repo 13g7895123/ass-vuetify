@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@vuetify/loader-shared": "^1.7.1",
-    "vite-plugin-vuetify": "^1.0.2"
-  }
-}
