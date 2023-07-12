@@ -2,9 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
+import route from "./router"
 
 loadFonts()
 
-createApp(App)
-  .use(vuetify)
-  .mount('#app')
+const app = createApp(App)
+app.use(vuetify)
+app.use(route)
+app.mount('#app')
