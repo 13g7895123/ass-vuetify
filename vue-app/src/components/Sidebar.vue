@@ -56,7 +56,5 @@ const items =  [
     {icon: 'mdi-home-city'},
     {icon: 'mdi-account'},
     {icon: 'mdi-account-group-outline'},
-    // {icon: 'fab fa-gitter'},
-    // {icon: 'fas fa-chart-line'},
 ]
 </script>
