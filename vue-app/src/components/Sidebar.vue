@@ -53,10 +53,10 @@
 const selectedItem = 0
 const drawer = true
 const items =  [
-    {icon: 'fas fa-plus'},
-    {icon: 'fas fa-th-large'},
-    {icon: 'fas fa-align-center'},
-    {icon: 'fab fa-gitter'},
-    {icon: 'fas fa-chart-line'},
+    {icon: 'mdi-home-city'},
+    {icon: 'mdi-account'},
+    {icon: 'mdi-account-group-outline'},
+    // {icon: 'fab fa-gitter'},
+    // {icon: 'fas fa-chart-line'},
 ]
 </script>
