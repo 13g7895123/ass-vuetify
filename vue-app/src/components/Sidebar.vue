@@ -23,10 +23,8 @@
                 <v-list-item v-for="(item, i) in items" :key="i" active-class="border" class=""
                 :ripple="false"
                 >
-                    <!-- <v-list-item-icon >     -->
-                        <v-icon v-text="item.icon"></v-icon>
-                    <!-- </v-list-item-icon> -->
-                    </v-list-item> 
+                    <v-icon :icon="item.icon"></v-icon>   
+                </v-list-item> 
             <!-- </v-list-item-group> -->
         </v-list>
         <div style="position: absolute; bottom: 20px;
