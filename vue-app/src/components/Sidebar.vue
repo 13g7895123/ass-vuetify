@@ -52,7 +52,7 @@
 
 const selectedItem = 0
 const drawer = null
-const item =  [
+const items =  [
     {icon: 'fas fa-plus'},
     {icon: 'fas fa-th-large'},
     {icon: 'fas fa-align-center'},
