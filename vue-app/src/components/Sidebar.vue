@@ -18,16 +18,16 @@
         <v-divider class="mx-3 my-5"></v-divider>
          
        <v-list flat  class="mt-5" >
-            <!-- <v-list-item-group v-model="selectedItem"  >
+            <!-- <v-list-item-group v-model="selectedItem"  > -->
               
                 <v-list-item v-for="(item, i) in items" :key="i" active-class="border" class=""
                 :ripple="false"
                 >
-                    <v-list-item-icon >    
+                    <!-- <v-list-item-icon >     -->
                         <v-icon v-text="item.icon"></v-icon>
-                    </v-list-item-icon>
+                    <!-- </v-list-item-icon> -->
                     </v-list-item> 
-            </v-list-item-group> -->
+            <!-- </v-list-item-group> -->
         </v-list>
         <div style="position: absolute; bottom: 20px;
         margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
