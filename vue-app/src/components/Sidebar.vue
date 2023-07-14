@@ -17,17 +17,17 @@
 
         <v-divider class="mx-3 my-5"></v-divider>
          
-       <v-list flat  class="mt-5" > 
-            <v-list-item
-            v-for="(item, i) in items"
-            :key="i"
-            active-class="border"
-            class=""
-            :ripple="false"
-            rounded="xl"
-            >
-                <v-icon :icon="item.icon"></v-icon>   
-            </v-list-item> 
+        <v-list density="compact" nav flat class="mt-5" > 
+          <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          active-class="border"
+          class=""
+          :ripple="false"
+          rounded="xl"
+          >
+              <v-icon :icon="item.icon"></v-icon>   
+          </v-list-item> 
         </v-list>
         <div style="position: absolute; bottom: 20px;
         margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
