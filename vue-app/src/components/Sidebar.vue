@@ -61,5 +61,6 @@ const items =  [
     {icon: 'mdi-account', text: 'account'},
     {icon: 'mdi-account-group-outline', text: 'test'},
     {icon: 'mdi-cash-plus', text: 'bonus', link: '/bonus'},
+    {icon: 'mdi-cash', text: 'money', link: '/money'},
 ]
 </script>
