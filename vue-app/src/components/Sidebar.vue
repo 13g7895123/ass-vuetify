@@ -27,6 +27,7 @@
             rounded="xl"
             :prepend-icon="item.icon"
             :title = 'item.text'
+            :to="item.link"
             link
           >
               <!-- <v-icon :icon="item.icon"></v-icon>    -->
@@ -59,6 +60,6 @@ const items =  [
     {icon: 'mdi-home-city', text: 'Home'},
     {icon: 'mdi-account', text: 'account'},
     {icon: 'mdi-account-group-outline', text: 'test'},
-    {icon: 'mdi-cash-plus', text: 'money'},
+    {icon: 'mdi-cash-plus', text: 'money', link: '/bonus'},
 ]
 </script>
