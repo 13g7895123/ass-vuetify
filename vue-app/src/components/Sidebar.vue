@@ -26,6 +26,7 @@
             :ripple="false"
             rounded="xl"
             :prepend-icon="item.icon"
+            :title = 'item.text'
           >
               <!-- <v-icon :icon="item.icon"></v-icon>    -->
           </v-list-item> 
@@ -54,8 +55,8 @@
 const selectedItem = 0
 const drawer = true
 const items =  [
-    {icon: 'mdi-home-city'},
-    {icon: 'mdi-account'},
-    {icon: 'mdi-account-group-outline'},
+    {icon: 'mdi-home-city', text: 'Home'},
+    {icon: 'mdi-account', text: 'account'},
+    {icon: 'mdi-account-group-outline', text: 'test'},
 ]
 </script>
