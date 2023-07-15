@@ -60,6 +60,6 @@ const items =  [
     {icon: 'mdi-home-city', text: 'Home'},
     {icon: 'mdi-account', text: 'account'},
     {icon: 'mdi-account-group-outline', text: 'test'},
-    {icon: 'mdi-cash-plus', text: 'money', link: '/bonus'},
+    {icon: 'mdi-cash-plus', text: 'bonus', link: '/bonus'},
 ]
 </script>
