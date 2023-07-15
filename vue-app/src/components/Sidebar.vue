@@ -27,6 +27,7 @@
             rounded="xl"
             :prepend-icon="item.icon"
             :title = 'item.text'
+            link
           >
               <!-- <v-icon :icon="item.icon"></v-icon>    -->
           </v-list-item> 
