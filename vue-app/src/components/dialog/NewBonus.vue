@@ -3,8 +3,9 @@
       v-model="props.showDialog"
       width="auto"
     >
-        <Test />
+        
       <v-card>
+        <Test />
         <v-card-text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </v-card-text>
