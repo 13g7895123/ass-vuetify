@@ -5,7 +5,8 @@
         ></v-text-field>
 
         <v-select
-        v-model="selectCate.value"
+        solo-inverted
+        v-model="selectedCate.value"
         :items="categories.value"
         label="Category"
         ></v-select>
@@ -49,7 +50,7 @@
 import { ref } from 'vue'
 
 const categories = ref(['web', 'python'])
-const selectCate = ref('')
+const selectedCate = ref()
 
 const submit = () => {}
 </script>
