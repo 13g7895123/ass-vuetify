@@ -4,7 +4,7 @@
     >
         <Sidebar />
         <Navbar />
-        <v-main>
+        <v-main class="mt-3 mx-5">
             <router-view />
         </v-main>
     </v-app>
