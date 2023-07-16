@@ -34,7 +34,7 @@
         submit
         </v-btn>
 
-        <v-btn @click="handleReset">
+        <v-btn @click="">
         clear
         </v-btn>
     </form>
