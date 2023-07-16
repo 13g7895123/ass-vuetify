@@ -7,6 +7,7 @@
         mini-variant
         mini-variant-width="80"
         :mini-variant.sync="mini"
+        :expand-on-hover="expandOnHover"
       >
         <v-list>
           <v-list-item
@@ -66,6 +67,8 @@
 
 const selectedItem = 0
 const drawer = true
+const mini =  false
+const expandOnHover = true
 const items =  [
     {icon: 'mdi-home-city', text: 'Home'},
     {icon: 'mdi-account', text: 'account'},
