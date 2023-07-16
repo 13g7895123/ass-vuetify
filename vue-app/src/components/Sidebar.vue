@@ -36,6 +36,7 @@
             :title = 'item.text'
             :to="item.link"
             link
+            base-color="white"
           >
           </v-list-item> 
         </v-list>
