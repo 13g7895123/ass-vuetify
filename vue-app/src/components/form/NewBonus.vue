@@ -47,10 +47,14 @@
     </form>
 </template>
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref, watchEffect, onMounted } from 'vue'
 
 const categories = ref(['web', 'python'])
 const selectedCate = ref()
+
+onMounted(() => {
+    console.log(categories.value);
+})
 
 watchEffect(() => {
     console.log(categories.value);
