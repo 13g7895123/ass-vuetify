@@ -13,3 +13,6 @@
 import Navbar from '../components/Navbar.vue';
 import Sidebar from '../components/Sidebar.vue';
 </script>
+<style>
+html { overflow-y: auto }
+</style>
