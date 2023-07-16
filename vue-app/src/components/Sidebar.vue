@@ -2,7 +2,7 @@
     <v-navigation-drawer
         v-model="drawer"
         app
-        color="white"
+        color="#2784FF"
         permanent
         mini-variant
         mini-variant-width="80"
@@ -64,7 +64,7 @@
 // const rail = true
 
 const selectedItem = 0
-const drawer = true
+const drawer = null
 const items =  [
     {icon: 'mdi-home-city', text: 'Home'},
     {icon: 'mdi-account', text: 'account'},
