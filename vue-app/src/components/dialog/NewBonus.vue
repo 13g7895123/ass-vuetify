@@ -3,8 +3,8 @@
       v-model="props.showDialog"
       width="auto"
     >
-        
-      <v-card>
+      <v-card max-width="500">
+        <v-card-title>New Bonus</v-card-title>
         <NewBonus />
         <!-- <v-card-text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
