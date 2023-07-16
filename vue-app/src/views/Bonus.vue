@@ -1,6 +1,7 @@
 <template>
     <v-row class="px-3 mt-3">
         <v-btn 
+            stack
             color="primary"
             prepend-icon="mdi-plus-circle-outline"
             variant="tonal"
