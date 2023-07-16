@@ -7,14 +7,12 @@
         mini-variant
         mini-variant-width="80"
       >
-        <v-avatar
-          class="d-block text-center mx-auto mt-4"
-          color=""
-          size="40"
-          image="./src/assets/tech_logo.png"
-        >
-          <!-- <v-icon color="#49D9A0" large>fab fa-atlassian</v-icon> -->
-        </v-avatar>
+        <v-list>
+          <v-list-item
+            prepend-avatar="./src/assets/tech_logo.png"
+            title="Assistant"
+          ></v-list-item>
+        </v-list>
 
         <v-divider class="mx-3 my-5"></v-divider>
          
