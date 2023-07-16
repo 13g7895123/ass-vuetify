@@ -17,26 +17,18 @@
 
         <v-divider class="mx-3 my-5"></v-divider>
          
-        <v-list-group
+        <!-- <v-list-group
           v-for = "item in items"
           :key = 'item.text'
         >
           <v-list-item slot='activator' :to="item.link">
             <template>
-            <!-- <template v-slot:prepend="{ isActive }"> -->
-              <!-- <v-icon v-if="isActive" :icon="item.icon"></v-icon> -->
               <v-icon>{{ item.icon }}</v-icon>
             </template>
-            <!-- <v-list-item-icon>
-                <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon> -->
             <v-list-item-title>{{ item.text }}</v-list-item-title>
           </v-list-item>
-          <!-- <v-list-item v-for='sub in item.subLinks' :key="sub.text">
-              <v-list-item-title :to="sub.link">{{ sub.text }}</v-list-item-title>
-          </v-list-item> -->
-        </v-list-group>
-        <!-- <v-list density="compact" nav flat class="mt-5" > 
+        </v-list-group> -->
+        <v-list density="compact" nav flat class="mt-5" > 
           <v-list-item
             v-for="(item, i) in items"
             :key="i"
@@ -50,7 +42,7 @@
             link
           >
           </v-list-item> 
-        </v-list> -->
+        </v-list>
         <div style="position: absolute; bottom: 20px;
         margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
                 <v-btn icon :ripple="false">

@@ -7,10 +7,11 @@ const routes = [
             { 
                 path: "/money",
                 component: () => import('../views/Money.vue'),
-                children :[
-                    { path: "/bonus", component: () => import('../views/Bonus.vue')},
-                ]
-            }
+                // children :[
+                //     { path: "/bonus", component: () => import('../views/Bonus.vue')},
+                // ]
+            },
+            { path: "/bonus", component: () => import('../views/Bonus.vue')},
             // { path: "/medicine", component: () => import('../views/Medicine.vue')},
         ]
     },
