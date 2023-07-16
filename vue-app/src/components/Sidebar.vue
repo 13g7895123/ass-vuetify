@@ -6,6 +6,7 @@
         permanent
         mini-variant
         mini-variant-width="80"
+        :mini-variant.sync="mini"
       >
         <v-list>
           <v-list-item
