@@ -1,11 +1,9 @@
 <template>
     <v-navigation-drawer
-        v-model="drawer"
-        app
+        
         color="#2784FF"
-        permanent
-        mini-variant
-        mini-variant-width="80"
+        
+        
         :mini-variant.sync="mini"
         :expand-on-hover="expandOnHover"
       >
