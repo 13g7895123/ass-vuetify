@@ -1,9 +1,9 @@
 <template>
     <Sidebar />
     <Navbar />
-    <v-container>
+    <v-content>
         <router-view />
-    </v-container>
+    </v-content>
 </template>
 <script setup>
 import Navbar from '../components/Navbar.vue';
