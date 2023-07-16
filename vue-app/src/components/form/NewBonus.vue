@@ -47,7 +47,7 @@
     </form>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 
 const categories = ref(['web', 'python'])
 const selectedCate = ref()
