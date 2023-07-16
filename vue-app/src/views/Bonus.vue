@@ -7,7 +7,7 @@
             新增案件
         </v-btn>
     </v-row>
-    <v-row class="px-3 mt-3">
+    <v-row class="px-3 pt-3">
         <v-data-table-server
             v-model:items-per-page="itemsPerPage"
             :headers="headers"
