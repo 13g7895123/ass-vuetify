@@ -3,7 +3,7 @@
       v-model="props.showDialog"
       width="auto"
     >
-      <v-card max-width="500">
+      <v-card max-width="500" width="500">
         <v-card-title>New Bonus</v-card-title>
         <NewBonus />
         <v-card-actions>
