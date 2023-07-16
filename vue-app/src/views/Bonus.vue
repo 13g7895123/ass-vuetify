@@ -122,61 +122,57 @@ const closeDialog = () =>{
     },
   ]
 
-  const FakeAPI = {
+const FakeAPI = {
     async fetch ({ page, itemsPerPage, sortBy }) {
-      return new Promise(resolve => {
-        setTimeout(() => {
-          const start = (page - 1) * itemsPerPage
-          const end = start + itemsPerPage
-          const items = desserts.slice()
+        return new Promise(resolve => {
+            setTimeout(() => {
+                const start = (page - 1) * itemsPerPage
+                const end = start + itemsPerPage
+                const items = desserts.slice()
 
-          if (sortBy.length) {
-            const sortKey = sortBy[0].key
-            const sortOrder = sortBy[0].order
-            items.sort((a, b) => {
-              const aValue = a[sortKey]
-              const bValue = b[sortKey]
-              return sortOrder === 'desc' ? bValue - aValue : aValue - bValue
-            })
-          }
+                if (sortBy.length) {
+                    const sortKey = sortBy[0].key
+                    const sortOrder = sortBy[0].order
+                    items.sort((a, b) => {
+                        const aValue = a[sortKey]
+                        const bValue = b[sortKey]
+                        return sortOrder === 'desc' ? bValue - aValue : aValue - bValue
+                    })
+                }
 
-          const paginated = items.slice(start, end)
+                const paginated = items.slice(start, end)
 
-          resolve({ items: paginated, total: items.length })
-        }, 500)
-      })
+                resolve({ items: paginated, total: items.length })
+            }, 500)
+        })
+    }
+}
+
+const itemsPerPage = 5
+const headers = [
+    {
+        title: 'Dessert (100g serving)',
+        align: 'start',
+        sortable: false,
+        key: 'name',
     },
-  }
+    { title: 'Calories', key: 'calories', align: 'end' },
+    { title: 'Fat (g)', key: 'fat', align: 'end' },
+    { title: 'Carbs (g)', key: 'carbs', align: 'end' },
+    { title: 'Protein (g)', key: 'protein', align: 'end' },
+    { title: 'Iron (%)', key: 'iron', align: 'end' },
+]
 
-//   export default {
-//     data: () => ({
-//       itemsPerPage: 5,
-//       headers: [
-//         {
-//           title: 'Dessert (100g serving)',
-//           align: 'start',
-//           sortable: false,
-//           key: 'name',
-//         },
-//         { title: 'Calories', key: 'calories', align: 'end' },
-//         { title: 'Fat (g)', key: 'fat', align: 'end' },
-//         { title: 'Carbs (g)', key: 'carbs', align: 'end' },
-//         { title: 'Protein (g)', key: 'protein', align: 'end' },
-//         { title: 'Iron (%)', key: 'iron', align: 'end' },
-//       ],
-//       serverItems: [],
-//       loading: true,
-//       totalItems: 0,
-//     }),
-//     methods: {
-//       loadItems ({ page, itemsPerPage, sortBy }) {
-//         this.loading = true
-//         FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
-//           this.serverItems = items
-//           this.totalItems = total
-//           this.loading = false
-//         })
-//       },
-//     },
-//   }
+let serverItems = []
+let loading = true
+let totalItems= 0
+
+const  loadItems = ({ page, itemsPerPage, sortBy }) => {
+    loading = true
+    FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
+        serverItems = items
+        totalItems = total
+        loading = false
+    })
+}
 </script>
