@@ -40,7 +40,7 @@
     </form>
 </template>
 <script setup>
-
+import { VTextField } from 'vuetify/lib/components/index.mjs';
 // import { ref } from 'vue'
 // import { useField, useForm } from 'vee-validate'
 
