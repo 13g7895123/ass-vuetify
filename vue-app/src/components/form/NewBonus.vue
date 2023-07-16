@@ -5,8 +5,8 @@
         ></v-text-field>
 
         <v-select
-        solo-inverted
-        v-model="selectedCate"
+        solo-filled
+        v-model=""
         :items="categories.value"
         label="Category"
         ></v-select>
