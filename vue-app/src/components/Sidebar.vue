@@ -8,6 +8,7 @@
           <v-list-item
             prepend-avatar="./src/assets/tech_logo.png"
             title="Assistant"
+            base-color="white"
           ></v-list-item>
         </v-list>
 
