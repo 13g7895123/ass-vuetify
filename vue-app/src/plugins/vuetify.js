@@ -5,7 +5,6 @@ import 'vuetify/styles'
 // Vuetify
 import { createVuetify } from 'vuetify'
 import { VDataTableServer } from 'vuetify/labs/VDataTable'
-import { VTextField } from 'vuetify/lib'
 
 export default createVuetify({
   // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
