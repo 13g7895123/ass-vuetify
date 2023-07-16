@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="submit">
+    <form @submit.prevent="submit" class="px-3">
         <v-text-field
         label="Case"
         ></v-text-field>
