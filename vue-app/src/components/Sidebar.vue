@@ -24,9 +24,14 @@
           class="h-3"
         >
           <v-list-item slot='activator' :to="item.link">
-            <v-list-item-icon>
+            <template>
+            <!-- <template v-slot:prepend="{ isActive }"> -->
+              <!-- <v-icon v-if="isActive" :icon="item.icon"></v-icon> -->
+              <v-icon>{{ item.icon }}</v-icon>
+            </template>
+            <!-- <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
+            </v-list-item-icon> -->
             <v-list-item-title>{{ item.text }}</v-list-item-title>
           </v-list-item>
           <!-- <v-list-item v-for='sub in item.subLinks' :key="sub.text">
