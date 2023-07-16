@@ -12,7 +12,7 @@ const routes = [
                 // ]
             },
             { path: "/bonus", component: () => import('../views/Bonus.vue')},
-            // { path: "/medicine", component: () => import('../views/Medicine.vue')},
+            { path: "/test", component: () => import('../views/Test.vue')},
         ]
     },
     // {
