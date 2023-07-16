@@ -3,7 +3,7 @@
         v-model="drawer"
         app
         color="white"
-       
+        permanent
         mini-variant
         mini-variant-width="80"
       >
