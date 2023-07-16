@@ -1,11 +1,7 @@
 <template>
     <v-navigation-drawer
-        
+        rail="true"
         color="#2784FF"
-        
-        
-        :mini-variant.sync="mini"
-        :expand-on-hover="expandOnHover"
       >
         <v-list>
           <v-list-item
