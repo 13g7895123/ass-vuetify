@@ -18,10 +18,8 @@
         <v-divider class="mx-3 my-5"></v-divider>
          
         <v-list-group
-          no-action
           v-for = "item in items"
           :key = 'item.text'
-          class="h-3"
         >
           <v-list-item slot='activator' :to="item.link">
             <template>
