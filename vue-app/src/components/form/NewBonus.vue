@@ -6,7 +6,7 @@
 
         <v-select
         solo-inverted
-        v-model="selectedCate.value"
+        v-model="selectedCate"
         :items="categories.value"
         label="Category"
         ></v-select>
