@@ -3,6 +3,7 @@
       v-model="props.showDialog"
       width="auto"
     >
+        <Test />
       <v-card>
         <v-card-text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -14,7 +15,7 @@
     </v-dialog>
 </template>
 <script setup>
-let dialog = true
+import Test from '../../views/Test.vue'
 
 const props = defineProps({
     showDialog: Boolean
