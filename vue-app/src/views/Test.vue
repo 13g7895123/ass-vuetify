@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="submit">
-        <v-text-field
+        <!-- <v-text-field
         v-model="name.value.value"
         :counter="10"
         :error-messages="name.errorMessage.value"
@@ -33,7 +33,7 @@
         value="1"
         label="Option"
         type="checkbox"
-        ></v-checkbox>
+        ></v-checkbox> -->
 
         <v-btn
         class="me-4"
