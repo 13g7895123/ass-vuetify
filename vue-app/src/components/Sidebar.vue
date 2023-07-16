@@ -65,7 +65,7 @@
 // const rail = true
 
 const selectedItem = 0
-const drawer = null
+const drawer = true
 const items =  [
     {icon: 'mdi-home-city', text: 'Home'},
     {icon: 'mdi-account', text: 'account'},
