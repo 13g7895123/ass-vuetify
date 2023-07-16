@@ -79,5 +79,6 @@ const items =  [
       //   {text: 'bonus', link: '/money/bonus'}
       // ]
     },
+    {icon: 'mdi-ab-testing', text: 'test', link: '/test'},
 ]
 </script>
