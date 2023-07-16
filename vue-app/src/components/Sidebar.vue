@@ -29,9 +29,9 @@
             </v-list-item-icon>
             <v-list-item-title>{{ item.text }}</v-list-item-title>
           </v-list-item>
-          <v-list-item v-for='sub in item.subLinks' :key="sub.text">
+          <!-- <v-list-item v-for='sub in item.subLinks' :key="sub.text">
               <v-list-item-title :to="sub.link">{{ sub.text }}</v-list-item-title>
-          </v-list-item>
+          </v-list-item> -->
         </v-list-group>
         <!-- <v-list density="compact" nav flat class="mt-5" > 
           <v-list-item
