@@ -1,6 +1,7 @@
 <template>
     <v-row class="px-3">
         <v-btn 
+            color="primary"
             prepend-icon="mdi-plus-circle-outline"
             variant="tonal"
             @click="handleAddBtn"
