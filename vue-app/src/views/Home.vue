@@ -4,7 +4,7 @@
     >
         <Sidebar />
         <Navbar />
-        <v-main class=" bg-green-200">
+        <v-main>
             <router-view />
         </v-main>
     </v-app>
