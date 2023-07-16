@@ -1,6 +1,7 @@
 <template>
     <v-navigation-drawer
-        rail="true"
+        rail
+        expand-on-hover
         color="#2784FF"
       >
         <v-list>
