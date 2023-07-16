@@ -10,7 +10,8 @@ export default createVuetify({
   theme: {
     themes: {
       dark: {
-        backgroung: '#F4F5F9'
+        backgroung: '#202124'
+        // backgroung: '#F4F5F9'
       }
     }
   }
