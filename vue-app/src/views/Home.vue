@@ -1,7 +1,7 @@
 <template>
     <Sidebar />
     <Navbar />
-    <v-content class="bg-slate-300">
+    <v-content class="bg-slate-500">
         <router-view />
     </v-content>
 </template>
