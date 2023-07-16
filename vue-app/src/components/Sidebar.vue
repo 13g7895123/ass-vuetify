@@ -23,7 +23,7 @@
           :key = 'item.text'
           class="h-3"
         >
-          <v-list-item slot='activator' :to="item.route">
+          <v-list-item slot='activator' :to="item.link">
             <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
