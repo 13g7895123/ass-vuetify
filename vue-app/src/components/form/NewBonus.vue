@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card max-width="500">
         <v-card-title>New Bonus</v-card-title>
         <form @submit.prevent="submit">
             <v-text-field
