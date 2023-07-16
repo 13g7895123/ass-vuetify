@@ -14,7 +14,7 @@
           ></v-list-item>
         </v-list>
 
-        <v-divider class="mx-3 my-5"></v-divider>
+        <v-divider class="mx-3"></v-divider>
          
         <!-- <v-list-group
           v-for = "item in items"
