@@ -17,7 +17,22 @@
 
         <v-divider class="mx-3 my-5"></v-divider>
          
-        <v-list density="compact" nav flat class="mt-5" > 
+        <v-list-group
+          no-action
+          v-for = "item in items"
+          :key = 'item.text'
+        >
+          <v-list-item slot='activator' :to="item.route">
+            <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>{{ item.text }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item v-for='sub in item.subLinks' :key="sub.text">
+              <v-list-item-title :to="sub.link">{{ sub.text }}</v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+        <!-- <v-list density="compact" nav flat class="mt-5" > 
           <v-list-item
             v-for="(item, i) in items"
             :key="i"
@@ -30,9 +45,8 @@
             :to="item.link"
             link
           >
-              <!-- <v-icon :icon="item.icon"></v-icon>    -->
           </v-list-item> 
-        </v-list>
+        </v-list> -->
         <div style="position: absolute; bottom: 20px;
         margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
                 <v-btn icon :ripple="false">
@@ -60,7 +74,14 @@ const items =  [
     {icon: 'mdi-home-city', text: 'Home'},
     {icon: 'mdi-account', text: 'account'},
     {icon: 'mdi-account-group-outline', text: 'test'},
-    {icon: 'mdi-cash-plus', text: 'bonus', link: '/bonus'},
-    {icon: 'mdi-cash', text: 'money', link: '/money'},
+    // {icon: 'mdi-cash-plus', text: 'bonus', link: '/bonus'},
+    {
+      icon: 'mdi-cash',
+      text: 'money', 
+      link: '/money',
+      subLinks: [
+        {text: 'bonus', link: '/money/bonus'}
+      ]
+    },
 ]
 </script>

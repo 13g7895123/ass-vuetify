@@ -4,8 +4,13 @@ const routes = [
         name: 'Home',
         component: () => import('../views/Home.vue'),
         children: [
-            { path: "/bonus", component: () => import('../views/Bonus.vue')},
-            { path: "/money", component: () => import('../views/Money.vue')},
+            { 
+                path: "/money",
+                component: () => import('../views/Money.vue'),
+                children :[
+                    { path: "/bonus", component: () => import('../views/Bonus.vue')},
+                ]
+            }
             // { path: "/medicine", component: () => import('../views/Medicine.vue')},
         ]
     },
