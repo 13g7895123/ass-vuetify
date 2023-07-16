@@ -7,7 +7,7 @@
         <v-select
         solo-filled
         v-model="selectedCate"
-        :items="categories.value"
+        :items="['web', 'python']"
         label="Category"
         ></v-select>
 
