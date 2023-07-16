@@ -9,8 +9,7 @@ import { VDataTableServer } from 'vuetify/labs/VDataTable'
 export default createVuetify({
   // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
   components:{
-    VDataTableServer,
-    VTextField
+    VDataTableServer
   },
   theme: {
     themes: {
