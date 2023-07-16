@@ -3,7 +3,7 @@
         <v-btn 
             prepend-icon="mdi-plus-circle-outline"
             variant="tonal"
-            @click=""
+            @click="handleAddBtn"
             >
             新增案件
         </v-btn>
@@ -29,14 +29,14 @@
 <script setup>
 import NewBonus from '../components/dialog/NewBonus.vue';
 
-const showDialog = false
+const showDialog = ref(false)
 
 const handleAddBtn = () => {
-    showDialog = true
+    showDialog.value = true
 }
 
 const closeDialog = () =>{
-    showDialog = false
+    showDialog.value = false
 }
 
   const desserts = [
