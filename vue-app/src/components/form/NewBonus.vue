@@ -52,5 +52,9 @@ import { ref } from 'vue'
 const categories = ref(['web', 'python'])
 const selectedCate = ref()
 
+watchEffect(() => {
+    console.log(categories.value);
+})
+
 const submit = () => {}
 </script>
