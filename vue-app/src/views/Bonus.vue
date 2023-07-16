@@ -27,6 +27,7 @@
     />
 </template>
 <script setup>
+import { ref } from 'vue'
 import NewBonus from '../components/dialog/NewBonus.vue';
 
 const showDialog = ref(false)
