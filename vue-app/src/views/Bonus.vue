@@ -1,13 +1,13 @@
 <template>
     <v-row class="px-3 mt-3">
         <v-btn 
-            stack
+            stacked
             color="primary"
             prepend-icon="mdi-plus-circle-outline"
             variant="tonal"
             @click="handleAddBtn"
             >
-            新增案件
+            新增
         </v-btn>
         <!-- <v-text-field></v-text-field> -->
     </v-row>
