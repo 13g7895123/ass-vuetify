@@ -6,7 +6,7 @@
 
         <v-select
         solo-filled
-        v-model=""
+        v-model="selectedCate"
         :items="categories.value"
         label="Category"
         ></v-select>
