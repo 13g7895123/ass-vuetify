@@ -1,25 +1,26 @@
 <template>
-    <v-row>
-        <v-btn 
-            prepend-icon="mdi-plus-circle-outline"
-            variant="tonal"
-            >
-            新增案件
-        </v-btn>
-    </v-row>
-    <v-row class="px-3 pt-3">
-        <v-data-table-server
-            v-model:items-per-page="itemsPerPage"
-            :headers="headers"
-            :items-length="totalItems"
-            :items="serverItems"
-            :loading="loading"
-            class="elevation-1"
-            item-value="name"
-            @update:options="loadItems"
-        ></v-data-table-server>
-    </v-row>
-    
+    <v-app class="px-3">
+        <v-row>
+            <v-btn 
+                prepend-icon="mdi-plus-circle-outline"
+                variant="tonal"
+                >
+                新增案件
+            </v-btn>
+        </v-row>
+        <v-row class="pt-3">
+            <v-data-table-server
+                v-model:items-per-page="itemsPerPage"
+                :headers="headers"
+                :items-length="totalItems"
+                :items="serverItems"
+                :loading="loading"
+                class="elevation-1"
+                item-value="name"
+                @update:options="loadItems"
+            ></v-data-table-server>
+        </v-row>
+    </v-app>
 </template>
 <script>
   const desserts = [
