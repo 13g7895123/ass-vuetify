@@ -3,6 +3,7 @@
         <v-btn 
             prepend-icon="mdi-plus-circle-outline"
             variant="tonal"
+            @click=""
             >
             新增案件
         </v-btn>
@@ -20,8 +21,24 @@
             @update:options="loadItems"
         ></v-data-table-server>
     </v-row>
+    <NewBonus
+        :showDialog = showDialog
+        @closeDialog="closeDialog"
+    />
 </template>
-<script>
+<script setup>
+import NewBonus from '../components/dialog/NewBonus.vue';
+
+const showDialog = false
+
+const handleAddBtn = () => {
+    showDialog = true
+}
+
+const closeDialog = () =>{
+    showDialog = false
+}
+
   const desserts = [
     {
       name: 'Frozen Yogurt',
@@ -131,35 +148,35 @@
     },
   }
 
-  export default {
-    data: () => ({
-      itemsPerPage: 5,
-      headers: [
-        {
-          title: 'Dessert (100g serving)',
-          align: 'start',
-          sortable: false,
-          key: 'name',
-        },
-        { title: 'Calories', key: 'calories', align: 'end' },
-        { title: 'Fat (g)', key: 'fat', align: 'end' },
-        { title: 'Carbs (g)', key: 'carbs', align: 'end' },
-        { title: 'Protein (g)', key: 'protein', align: 'end' },
-        { title: 'Iron (%)', key: 'iron', align: 'end' },
-      ],
-      serverItems: [],
-      loading: true,
-      totalItems: 0,
-    }),
-    methods: {
-      loadItems ({ page, itemsPerPage, sortBy }) {
-        this.loading = true
-        FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
-          this.serverItems = items
-          this.totalItems = total
-          this.loading = false
-        })
-      },
-    },
-  }
+//   export default {
+//     data: () => ({
+//       itemsPerPage: 5,
+//       headers: [
+//         {
+//           title: 'Dessert (100g serving)',
+//           align: 'start',
+//           sortable: false,
+//           key: 'name',
+//         },
+//         { title: 'Calories', key: 'calories', align: 'end' },
+//         { title: 'Fat (g)', key: 'fat', align: 'end' },
+//         { title: 'Carbs (g)', key: 'carbs', align: 'end' },
+//         { title: 'Protein (g)', key: 'protein', align: 'end' },
+//         { title: 'Iron (%)', key: 'iron', align: 'end' },
+//       ],
+//       serverItems: [],
+//       loading: true,
+//       totalItems: 0,
+//     }),
+//     methods: {
+//       loadItems ({ page, itemsPerPage, sortBy }) {
+//         this.loading = true
+//         FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
+//           this.serverItems = items
+//           this.totalItems = total
+//           this.loading = false
+//         })
+//       },
+//     },
+//   }
 </script>

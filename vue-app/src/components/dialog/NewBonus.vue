@@ -1,6 +1,6 @@
 <template>
     <v-dialog
-      v-model="dialog"
+      v-model="props.showDialog"
       width="auto"
     >
       <template v-slot:activator="{ props }">
@@ -24,4 +24,11 @@
 </template>
 <script setup>
 let dialog = true
+
+const props = defineProps({
+    showDialog: Boolean
+})
+
+const emits = defineEmits(['closeDialog'])
+
 </script>
