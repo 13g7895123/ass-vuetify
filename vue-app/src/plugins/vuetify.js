@@ -3,13 +3,14 @@ import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 
 // Vuetify
-import { createVuetify } from 'vuetify'
+import { createVuetify, VTextField } from 'vuetify'
 import { VDataTableServer } from 'vuetify/labs/VDataTable'
 
 export default createVuetify({
   // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
   components:{
-    VDataTableServer
+    VDataTableServer,
+    VTextField
   },
   theme: {
     themes: {
