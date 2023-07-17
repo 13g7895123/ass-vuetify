@@ -1,6 +1,7 @@
 <template>
     <form @submit.prevent="submit" class="px-3">
         <v-text-field
+            v-model="inpName"
             variant="outlined"
             label="Case"
         ></v-text-field>
@@ -13,6 +14,7 @@
         ></v-select>
 
         <v-text-field
+            v-model="inpAmount"
             variant="outlined"
             label="Amount"
         ></v-text-field>
@@ -40,7 +42,10 @@
 import { ref, watchEffect, onMounted } from 'vue'
 
 const categories = ['web', 'python']
+
+const inpName = ref()
 const selectedCate = ref()
+const inpAmount = ref()
 const selectedStatus = ref()
 
 onMounted(() => {
@@ -51,5 +56,7 @@ watchEffect(() => {
     console.log(categories.value);
 })
 
-const submit = () => {}
+const submit = () => {
+    alert(`name: ${inpName}, cate: ${selectedCate}, status: ${selectedStatus}, amount: ${inpAmount}`)
+}
 </script>
