@@ -24,24 +24,9 @@
             label="status"
         ></v-select>
 
-        <!-- <v-select
-        v-model="select.value.value"
-        :items="items"
-        :error-messages="select.errorMessage.value"
-        label="Select"
-        ></v-select> -->
-
-        <!-- <v-checkbox
-        v-model="checkbox.value.value"
-        :error-messages="checkbox.errorMessage.value"
-        value="1"
-        label="Option"
-        type="checkbox"
-        ></v-checkbox> -->
-
         <v-btn
-        class="me-4"
-        type="submit"
+            class="me-4"
+            type="submit"
         >
         submit
         </v-btn>
@@ -56,6 +41,7 @@ import { ref, watchEffect, onMounted } from 'vue'
 
 const categories = ref(['web', 'python'])
 const selectedCate = ref()
+const selectedStatus = ref()
 
 onMounted(() => {
     console.log(categories.value);
