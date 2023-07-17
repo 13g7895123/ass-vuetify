@@ -1,8 +1,8 @@
 <template>
     <form @submit.prevent="submit" class="px-3">
         <v-text-field
-        solo
-        label="Case"
+            variant="solo"
+            label="Case"
         ></v-text-field>
 
         <v-select
