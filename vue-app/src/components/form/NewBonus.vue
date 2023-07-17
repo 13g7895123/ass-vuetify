@@ -8,7 +8,7 @@
         <v-select
             variant="outlined"
             v-model="selectedCate"
-            :items="['web', 'python']"
+            :items="categories"
             label="Category"
         ></v-select>
 
@@ -39,7 +39,7 @@
 <script setup>
 import { ref, watchEffect, onMounted } from 'vue'
 
-const categories = ref(['web', 'python'])
+const categories = ['web', 'python']
 const selectedCate = ref()
 const selectedStatus = ref()
 
