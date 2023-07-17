@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="submit" class="px-3">
         <v-text-field
-            variant="solo"
+            variant="outlined"
             label="Case"
         ></v-text-field>
 
