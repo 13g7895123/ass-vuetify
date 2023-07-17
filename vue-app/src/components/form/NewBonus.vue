@@ -6,19 +6,23 @@
         ></v-text-field>
 
         <v-select
-        variant="outlined"
-        v-model="selectedCate"
-        :items="['web', 'python']"
-        label="Category"
+            variant="outlined"
+            v-model="selectedCate"
+            :items="['web', 'python']"
+            label="Category"
         ></v-select>
 
         <v-text-field
-        label="Phone Number"
+            variant="outlined"
+            label="Amount"
         ></v-text-field>
 
-        <v-text-field        
-        label="E-mail"
-        ></v-text-field>
+        <v-select
+            variant="outlined"
+            v-model="selectedCate"
+            :items="['接洽中', '未開始', '執行中', '已完成', '已完成(待付款)']"
+            label="status"
+        ></v-select>
 
         <!-- <v-select
         v-model="select.value.value"
