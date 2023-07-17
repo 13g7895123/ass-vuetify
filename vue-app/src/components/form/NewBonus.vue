@@ -1,11 +1,12 @@
 <template>
     <form @submit.prevent="submit" class="px-3">
         <v-text-field
+        solo
         label="Case"
         ></v-text-field>
 
         <v-select
-        solo-filled
+        solo
         v-model="selectedCate"
         :items="['web', 'python']"
         label="Category"
