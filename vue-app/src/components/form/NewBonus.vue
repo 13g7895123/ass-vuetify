@@ -57,6 +57,6 @@ watchEffect(() => {
 })
 
 const submit = () => {
-    alert(`name: ${inpName}, cate: ${selectedCate}, status: ${selectedStatus}, amount: ${inpAmount}`)
+    alert(`name: ${inpName.value}, cate: ${selectedCate.value}, status: ${selectedStatus.value}, amount: ${inpAmount.value}`)
 }
 </script>
