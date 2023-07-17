@@ -6,7 +6,7 @@
         ></v-text-field>
 
         <v-select
-        solo
+        variant="outlined"
         v-model="selectedCate"
         :items="['web', 'python']"
         label="Category"
