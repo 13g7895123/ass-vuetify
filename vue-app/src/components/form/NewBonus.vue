@@ -19,7 +19,7 @@
 
         <v-select
             variant="outlined"
-            v-model="selectedCate"
+            v-model="selectedStatus"
             :items="['接洽中', '未開始', '執行中', '已完成', '已完成(待付款)']"
             label="status"
         ></v-select>
