@@ -26,6 +26,13 @@
             label="status"
         ></v-select>
 
+        <v-text-field
+            type="date"
+            v-model="inpStartContactDate"
+            variant="outlined"
+            label="start contact date"
+        ></v-text-field>
+
         <v-btn
             class="me-4"
             type="submit"
@@ -40,6 +47,7 @@
 </template>
 <script setup>
 import { ref, watchEffect, onMounted } from 'vue'
+import axios from 'axios'
 
 const categories = ['web', 'python']
 
@@ -47,6 +55,7 @@ const inpName = ref()
 const selectedCate = ref()
 const inpAmount = ref()
 const selectedStatus = ref()
+const inpStartContactDate = ref()
 
 onMounted(() => {
     console.log(categories.value);
@@ -56,7 +65,35 @@ watchEffect(() => {
     console.log(categories.value);
 })
 
-const submit = () => {
+const submit = async() => {
+
+    const formData = ref({
+        name: inpName.value,
+        cate: selectedCate.value,
+        status: selectedStatus.value,
+        amount: inpAmount.value,
+        start_contact_date: inpStartContactDate.value
+    })
+
     alert(`name: ${inpName.value}, cate: ${selectedCate.value}, status: ${selectedStatus.value}, amount: ${inpAmount.value}`)
+    apiUrl.value = `http://139.162.15.125:9090/api/bonus-summary/bonus-add.php`
+    const { data: { success, msg } } = await axios.post(
+        apiUrl.value,
+        formData.value
+    )
+
+    if (success){
+        // handleClose()
+        // Swal.fire({
+        //     title: `${apiUrlOperationText}會員成功`,
+        //     icon: 'success',
+        //     showConfirmButton: false,
+        //     showCancelButton: false,
+        //     timer: 2000,
+        // }).then(() => {
+        //     emits('handleUpdateProfiles')
+        // })
+        alert('success')
+    }
 }
 </script>
