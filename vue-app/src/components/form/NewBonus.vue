@@ -84,7 +84,7 @@ const submit = async() => {
         formData.value
     )
 
-    console.log(data)
+    // console.log(data)
     console.log(success);
 
     if (success){
