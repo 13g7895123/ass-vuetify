@@ -57,6 +57,8 @@ const inpAmount = ref()
 const selectedStatus = ref()
 const inpStartContactDate = ref()
 
+const apiUrl = ref()
+
 onMounted(() => {
     console.log(categories.value);
 })
