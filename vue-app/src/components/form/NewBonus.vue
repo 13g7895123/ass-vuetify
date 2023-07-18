@@ -75,12 +75,15 @@ const submit = async() => {
         start_contact_date: inpStartContactDate.value
     })
 
-    alert(`name: ${inpName.value}, cate: ${selectedCate.value}, status: ${selectedStatus.value}, amount: ${inpAmount.value}`)
+    // alert(`name: ${inpName.value}, cate: ${selectedCate.value}, status: ${selectedStatus.value}, amount: ${inpAmount.value}`)
     apiUrl.value = `http://139.162.15.125:9090/api/bonus-summary/bonus-add.php`
     const { data: { success, msg } } = await axios.post(
         apiUrl.value,
         formData.value
     )
+
+    console.log(data)
+    console.log(success);
 
     if (success){
         // handleClose()
