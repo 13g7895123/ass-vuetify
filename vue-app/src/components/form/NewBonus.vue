@@ -78,7 +78,7 @@ const submit = async() => {
     })
 
     // alert(`name: ${inpName.value}, cate: ${selectedCate.value}, status: ${selectedStatus.value}, amount: ${inpAmount.value}`)
-    apiUrl.value = `http://139.162.15.125:9090/api/bonus-summary/bonus-add.php`
+    apiUrl.value = `http://170.187.229.132:9051/api/bonus`
     const { data: { success, msg } } = await axios.post(
         apiUrl.value,
         formData.value
