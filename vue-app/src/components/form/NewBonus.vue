@@ -77,28 +77,26 @@ const submit = async() => {
         start_contact_date: inpStartContactDate.value
     })
 
-    // alert(`name: ${inpName.value}, cate: ${selectedCate.value}, status: ${selectedStatus.value}, amount: ${inpAmount.value}`)
     apiUrl.value = '/api/bonus'
     const { data: { success, msg } } = await axios.post(
         apiUrl.value,
         formData.value
     )
 
-    // console.log(data)
     console.log(success);
 
     if (success){
-        // handleClose()
-        // Swal.fire({
-        //     title: `${apiUrlOperationText}會員成功`,
-        //     icon: 'success',
-        //     showConfirmButton: false,
-        //     showCancelButton: false,
-        //     timer: 2000,
-        // }).then(() => {
-        //     emits('handleUpdateProfiles')
-        // })
-        alert('success')
+        handleClose()
+        Swal.fire({
+            title: `建立紀錄成功`,
+            icon: 'success',
+            showConfirmButton: false,
+            showCancelButton: false,
+            timer: 2000,
+        }).then(() => {
+            // emits('handleUpdateProfiles')
+        })
+        // alert('success')
     }
 }
 </script>
