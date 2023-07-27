@@ -44,6 +44,8 @@ const getData = async() => {
   }
 }
 
+watchEffect(() => getData())
+
 const handleAddBtn = () => {
     showDialog.value = true
 }
