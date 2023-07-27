@@ -32,7 +32,7 @@ import { ref } from 'vue'
 import NewBonus from '../components/dialog/NewBonus.vue';
 import axios from 'axios'
 
-const tableData = red([])
+const tableData = ref([])
 const showDialog = ref(false)
 
 const getData = async() => {
