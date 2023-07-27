@@ -36,7 +36,7 @@ const tableData = ref([])
 const showDialog = ref(false)
 
 const getData = async() => {
-  const { data: { success, data } } = axios.get('/api/bonus')
+  const { data: { success, data } } = await axios.get('/api/bonus')
 
   if (success){
     console.log(data)
