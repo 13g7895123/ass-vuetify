@@ -87,12 +87,12 @@ const headers = [
     { title: 'Amount', key: 'amount', align: 'end' },
     { title: 'Status', key: 'status', align: 'center' },
     { title: 'Start Contact Date', key: 'start_contact_date', align: 'center' },
-    // { title: 'Start Implement Date', key: 'start_implement_date', align: 'center' },
-    // { title: 'Finish Date', key: 'finish_date', align: 'center' },
-    // { title: 'Last Update Date', key: 'last_update_date', align: 'center' },
-    // { title: 'Receive Payment Date', key: 'receive_payment_date', align: 'center' },
-    // { title: 'Tag', key: 'tag', align: 'center' },
-    // { title: 'Remark', key: 'reark', align: 'start' },
+    { title: 'Start Implement Date', key: 'start_implement_date', align: 'center' },
+    { title: 'Finish Date', key: 'finish_date', align: 'center' },
+    { title: 'Last Update Date', key: 'last_update_date', align: 'center' },
+    { title: 'Receive Payment Date', key: 'receive_payment_date', align: 'center' },
+    { title: 'Tag', key: 'tag', align: 'center' },
+    { title: 'Remark', key: 'reark', align: 'start' },
 ]
 
 let serverItems = []
