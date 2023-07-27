@@ -83,12 +83,16 @@ const FakeAPI = {
 const itemsPerPage = 5
 const headers = [
     { title: 'Bonus', align: 'start', sortable: false, key: 'name' },
-    { title: 'Category', key: 'cate', align: 'end' },
+    { title: 'Category', key: 'cate', align: 'center' },
     { title: 'Amount', key: 'amount', align: 'end' },
-    { title: 'Status', key: 'status', align: 'end' },
-    // { title: 'Start Contact Date', key: 'a', align: 'end' },
-    // { title: 'Start Implement Date', key: 'protein', align: 'end' },
-    // { title: 'Finish Date', key: 'iron', align: 'end' },
+    { title: 'Status', key: 'status', align: 'center' },
+    { title: 'Start Contact Date', key: 'a', align: 'center' },
+    { title: 'Start Implement Date', key: 'protein', align: 'center' },
+    { title: 'Finish Date', key: 'iron', align: 'center' },
+    { title: 'Last Update Date', key: 'iron', align: 'center' },
+    { title: 'Receive Payment Date', key: 'iron', align: 'center' },
+    { title: 'Tag', key: 'iron', align: 'center' },
+    { title: 'Remark', key: 'iron', align: 'start' },
 ]
 
 let serverItems = []
