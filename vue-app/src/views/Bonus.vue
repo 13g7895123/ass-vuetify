@@ -28,7 +28,7 @@
     />
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 import NewBonus from '../components/dialog/NewBonus.vue';
 import axios from 'axios'
 
