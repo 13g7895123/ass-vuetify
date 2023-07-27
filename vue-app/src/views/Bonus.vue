@@ -30,8 +30,19 @@
 <script setup>
 import { ref } from 'vue'
 import NewBonus from '../components/dialog/NewBonus.vue';
+import axios from 'axios'
 
+const tableData = red([])
 const showDialog = ref(false)
+
+const getData = async() => {
+  const { data: { success, data } } = axios.get('/api/bonus')
+
+  if (success){
+    console.log(data)
+    tableData.value = data
+  }
+}
 
 const handleAddBtn = () => {
     showDialog.value = true
