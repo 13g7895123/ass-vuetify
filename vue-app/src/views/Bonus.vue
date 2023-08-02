@@ -16,7 +16,6 @@
             :headers="headers"
             :items-length="totalItems"
             :items="tableData"
-            :loading="loading"
             class="elevation-1"
             item-value="name"
             @update:options="loadItems"
