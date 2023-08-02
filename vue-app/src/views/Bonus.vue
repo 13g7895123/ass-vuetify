@@ -99,12 +99,14 @@ let serverItems = []
 let loading = true
 let totalItems= 0
 
-const  loadItems = ({ page, itemsPerPage, sortBy }) => {
+const loadItems = ({ page, itemsPerPage, sortBy }) => {
     loading = true
     FakeAPI.fetch({ page, itemsPerPage, sortBy }).then(({ items, total }) => {
         serverItems = items
         totalItems = total
         loading = false
+        console.log(serverItems);
+        console.log(loading);
     })
 }
 </script>
