@@ -86,7 +86,7 @@ const submit = async() => {
     console.log(success);
 
     if (success){
-        handleClose()
+        emits('closeDialog')
         Swal.fire({
             title: `建立紀錄成功`,
             icon: 'success',
@@ -98,5 +98,7 @@ const submit = async() => {
         })
         // alert('success')
     }
+
+    const emits = defineEmits(['closeDialog'])
 }
 </script>
