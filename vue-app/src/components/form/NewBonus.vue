@@ -98,7 +98,7 @@ const submit = async() => {
         })
         // alert('success')
     }
-
-    const emits = defineEmits(['closeDialog'])
 }
+
+const emits = defineEmits(['closeDialog'])
 </script>
