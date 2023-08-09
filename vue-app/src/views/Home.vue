@@ -4,6 +4,7 @@
     >
         <Sidebar />
         <Navbar />
+        <div class="text-red-500">123</div>
         <v-main class="mt-3 mx-7">
             <router-view />
         </v-main>
