@@ -8,6 +8,7 @@
             >
             新增
         </v-btn>
+        <div class="text-red-500">123</div>
         <!-- <v-text-field></v-text-field> -->
     </v-row>
     <v-row class="px-3 pt-3">
