@@ -41,19 +41,8 @@
           >
           </v-list-item> 
         </v-list>
-        <div style="position: absolute; bottom: 20px;
-        margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
-                <v-btn icon :ripple="false">
-         <v-badge bordered overlap color="red" dot>
-        
-        <v-icon>far fa-bell</v-icon>
-     
-         </v-badge>
-          </v-btn><br>
-           <v-avatar size="30"  >
-          <v-img src="https://cdn.vuetifyjs.com/images/lists/2.jpg"></v-img>
-        </v-avatar>
-
+        <!-- 登出可以放在這裡 -->
+        <div style="position: absolute; bottom: 20px; margin-left: auto; margin-right: auto; left:0; right: 0; text-align: center;">
         </div>
       </v-navigation-drawer>
 
@@ -71,10 +60,7 @@ const items =  [
     {icon: 'mdi-account', text: 'account'},
     {icon: 'mdi-account-group-outline', text: 'test'},
     {icon: 'mdi-cash-plus', text: 'bonus', link: '/bonus'},
-    {
-      icon: 'mdi-cash',
-      text: 'money', 
-      link: '/money',
+    {icon: 'mdi-cash', text: 'money', link: '/money',
       // subLinks: [
       //   {text: 'bonus', link: '/money/bonus'}
       // ]
